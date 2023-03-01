@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/comet"
+    tools:context=".MainActivity">
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/comet"
+        ></pl.droidsonroids.gif.GifImageView>
+    <TextView
+        android:id="@+id/tv_selamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Selamat Datang!"
+        android:textStyle="bold"
+        android:textColor="#CC5C5C"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_sesi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="************"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_below="@id/tv_selamat"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="T________T"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_below="@id/tv_sesi"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:layout_below="@id/tv_name"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="#428334"
+></Button>
+
+<!--    <pl.droidsonroids.gif.GifImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/comet"-->
+<!--        ></pl.droidsonroids.gif.GifImageView>-->
+
+
+</RelativeLayout>

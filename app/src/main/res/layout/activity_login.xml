@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+
+    tools:context=".loginActivity">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/comet"
+            ></pl.droidsonroids.gif.GifImageView>
+    <TextView
+        android:id="@+id/tv_cobalogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COBA LOGIN :)"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/tv_cobalogin"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/et_username"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:backgroundTint="#AA3838"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/et_password"
+        android:onClick="prosesLogin"
+        />
+
+<!--    <pl.droidsonroids.gif.GifImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/comet"-->
+</RelativeLayout>
